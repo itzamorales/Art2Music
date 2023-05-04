@@ -258,7 +258,7 @@ with col1:
 
     'You selected the ' + scale + ' scale'
 with col2:
-    key = st.selectbox('What key would you like to use?', df2['Keys']) 
+    key = st.select_slider('What key would you like to use?', df2['Keys']) 
     
     'You selected: ', key
 
