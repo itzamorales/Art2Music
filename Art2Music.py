@@ -274,10 +274,10 @@ with col4:
 col5, col6 = st.columns(2)
 with col5:
     #Ask user if they want to use random pixels
-    random_pixels = st.radio('Use random pixels to build song?', value=False)
+    random_pixels = st.radio('Use random pixels to build song?', value=True)
 with col6:
     #Ask user to select song duration
-    use_octaves = st.radio('Randomize note octaves while building song?', value=False) 
+    use_octaves = st.radio('Randomize note octaves while building song?', value=True) 
     
 col7, col8 = st.columns(2)
 with col7:
