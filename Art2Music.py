@@ -266,7 +266,7 @@ with col5:
    random_pixels = st.checkbox('Use random pixels to build song?', value=True)
 with col6:
     #Ask user to select song duration
-    use_octaves = st.checkbox('Randomize note octaves while building song?', value=True)"""
+    use_octaves = st.checkbox('Randomize note octaves while building song?', value=True)
     
 col7, col8 = st.columns(2)
 with col7:
