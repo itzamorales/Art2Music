@@ -286,7 +286,7 @@ with col7:
 
 with col8:
     #Ask user to select song duration
-    n_pixels = st.slider('How many pixels to use? (More pixels take longer)', min_value=12, max_value=320, step=1, value=60)         
+    n_pixels = st.number_input('How many pixels to use? (More pixels take longer)', min_value=12, max_value=320, step=1, value=60)         
 #***Start Peadalboard Definitions*** 
 st.markdown("## Pedalboard")
 col9, col10,col11,col12 = st.columns(4)
