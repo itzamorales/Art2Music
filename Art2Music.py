@@ -20,20 +20,8 @@ from scipy.io import wavfile
 import librosa
 import glob
 
-#Keep track of settings
-#Handle user user input
+#Changed color of application to great funky colors... Enjoy! 
 
-#See if they want to use own image or sample
-#See if we have an image
-
-#Save Image into a temp file
-#Ask the computer to view the image
-#grab Hue from HSV
-#seperate the Hues and convert to Frequency
-#generic song save
-#Make an effected version
-#save the final song and make a midi
-#This function generates frequencies in Hertz from notes
 def get_piano_notes():   
     # White keys are in Uppercase and black keys (sharps) are in lowercase
     octave = ['C', 'c', 'D', 'd', 'E', 'F', 'f', 'G', 'g', 'A', 'a', 'B'] 
@@ -249,6 +237,7 @@ elif _radio == "Use User Image":
     img2load = user_data
 
 #Display the image
+#changed boxes to slider
 st.sidebar.image(img2load)    
 
 col1, col2, col3, col4 = st.columns(4)
@@ -274,10 +263,10 @@ with col4:
 col5, col6 = st.columns(2)
 with col5:
     #Ask user if they want to use random pixels
-    random_pixels = st.radio('Use random pixels to build song?', value=True)
+   random_pixels = st.checkbox('Use random pixels to build song?', value=True)
 with col6:
     #Ask user to select song duration
-    use_octaves = st.radio('Randomize note octaves while building song?', value=True) 
+    use_octaves = st.checkbox('Randomize note octaves while building song?', value=True)"""
     
 col7, col8 = st.columns(2)
 with col7:
