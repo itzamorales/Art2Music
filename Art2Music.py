@@ -254,7 +254,7 @@ st.sidebar.image(img2load)
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    scale = st.selectbox('What scale would you like yo use?', df1['Scale_Choice'])
+    scale = st.select_slider('What scale would you like yo use?', df1['Scale_Choice'])
 
     'You selected the ' + scale + ' scale'
 with col2:
@@ -263,21 +263,21 @@ with col2:
     'You selected: ', key
 
 with col3:
-    octave = st.selectbox('What octave would you like to use?', df3['Octaves']) 
+    octave = st.select_slider('What octave would you like to use?', df3['Octaves']) 
 
     'You selected: ', octave
 with col4:
-    harmony = st.selectbox('What harmony would you like to use?', df4['Harmonies']) 
+    harmony = st.select_slider('What harmony would you like to use?', df4['Harmonies']) 
 
     'You selected: ', harmony
 
 col5, col6 = st.columns(2)
 with col5:
     #Ask user if they want to use random pixels
-    random_pixels = st.checkbox('Use random pixels to build song?', value=True)
+    random_pixels = st.radio('Use random pixels to build song?', value=False)
 with col6:
     #Ask user to select song duration
-    use_octaves = st.checkbox('Randomize note octaves while building song?', value=True) 
+    use_octaves = st.radio('Randomize note octaves while building song?', value=False) 
     
 col7, col8 = st.columns(2)
 with col7:
