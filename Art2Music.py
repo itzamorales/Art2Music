@@ -266,10 +266,13 @@ with col4:
 
 col5, col6 = st.columns(2)
 with col5:
-    random_pixels = st.radio(label="Would you like to use random pixels to build song?")
-    if radio == "Yes":
+    st.markdown("Would you like to use random pixels to build song?")
+    _radio = st.radio("", ("Yes", "No"))
+    
+    random_pixels = st.radio
+    if _radio == "Yes":
         random_pixels = True
-    elif radio == "No":
+    elif _radio == "No":
         random_pixels = False
     #Ask user if they want to use random pixels
     
