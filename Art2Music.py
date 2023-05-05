@@ -265,7 +265,7 @@ with col4:
     'You selected: ', harmony
 
 col5, col6 = st.columns(2)
-with col5:(label:"Would you like to use random pixels to build song?")
+with col5:(label="Would you like to use random pixels to build song?")
     if radio == "Yes":
         random_pixels = True
     elif radio == "No":
