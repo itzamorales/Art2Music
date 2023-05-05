@@ -265,10 +265,13 @@ with col4:
     'You selected: ', harmony
 
 col5, col6 = st.columns(2)
-with col5:
+with col5:(label:"Would you like to use random pixels to build song?")
+    if radio == "Yes":
+        random_pixels = True
+    elif radio == "No":
+        random_pixels = Flase 
     #Ask user if they want to use random pixels
     
-   random_pixels = st.checkbox('Use random pixels to build song?', value=True)
 with col6:
     #Ask user to select song duration
     use_octaves = st.checkbox('Randomize note octaves while building song?', value=True)
