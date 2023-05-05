@@ -266,6 +266,7 @@ with col4:
 
 col5, col6 = st.columns(2)
 with col5:
+    #Ask user if they want to use random pixels
     st.markdown("Would you like to use random pixels to build song?")
     _radio = st.radio("", ("Yes", "No"))
     
@@ -274,11 +275,18 @@ with col5:
         random_pixels = True
     elif _radio == "No":
         random_pixels = False
-    #Ask user if they want to use random pixels
+    
     
 with col6:
     #Ask user to select song duration
-    use_octaves = st.checkbox('Randomize note octaves while building song?', value=True)
+    st.markdown("Would you like to randomize note octaves while building song?")
+    _radio = st.radio("", ("Yes", "No"))
+    
+    use_octaves = st.radio
+    if _radio == "Yes":
+        use_octave = True
+    elif _radio == "No":
+        use_octave = False
     
 col7, col8 = st.columns(2)
 with col7:
