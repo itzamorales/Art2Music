@@ -6,4 +6,3 @@ st.set_page_config(
 )
 st.title("Welcome to my final project")
 st.sidebar.success("Click on page you'd like to visit."
-#https://youtu.be/YClmpnpszq8
