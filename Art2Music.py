@@ -21,8 +21,8 @@ import librosa
 import glob
 
 #Changed color of application to great funky colors... Enjoy! 
-#Changed Dropdown boxes to sliders. 
-#Changed Silders to drop down boxes
+#Changed dropdown boxes to sliders
+#Changed note duration & pixels to number pickers
 #Changed check boxes to Radio options
 #added cover page to app
 
@@ -267,6 +267,7 @@ with col4:
 col5, col6 = st.columns(2)
 with col5:
     #Ask user if they want to use random pixels
+    
    random_pixels = st.checkbox('Use random pixels to build song?', value=True)
 with col6:
     #Ask user to select song duration
