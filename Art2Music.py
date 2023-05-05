@@ -21,6 +21,10 @@ import librosa
 import glob
 
 #Changed color of application to great funky colors... Enjoy! 
+#Changed Dropdown boxes to sliders. 
+#Changed Silders to drop down boxes
+#Changed check boxes to Radio options
+#added cover page to app
 
 def get_piano_notes():   
     # White keys are in Uppercase and black keys (sharps) are in lowercase
@@ -271,7 +275,7 @@ with col6:
 col7, col8 = st.columns(2)
 with col7:
     #Ask user to select song duration
-    t_value = st.slider('Note duration [s]', min_value=0.01, max_value=1.0, step = 0.01, value=0.2)     
+    t_value = st.number_input('Note duration [s]', min_value=0.01, max_value=1.0, step = 0.01, value=0.2)     
 
 with col8:
     #Ask user to select song duration
