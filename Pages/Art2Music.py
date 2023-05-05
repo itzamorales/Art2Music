@@ -26,7 +26,7 @@ import glob
 #Changed a check boxes to Radio option (tried to do both, but they had the same key, so I wasn't able to get them both). 
 #Changed a check box into a dropdown option instead.
 #added cover page to app
-st.set_page_config(page_title="Final Project")
+
 st.title("Art2Music")
 
 def get_piano_notes():   
