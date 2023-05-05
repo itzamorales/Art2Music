@@ -27,8 +27,6 @@ import glob
 #Changed a check box into a dropdown option instead.
 #added cover page to app
 
-st.title("Art2Music")
-
 def get_piano_notes():   
     # White keys are in Uppercase and black keys (sharps) are in lowercase
     octave = ['C', 'c', 'D', 'd', 'E', 'F', 'f', 'G', 'g', 'A', 'a', 'B'] 
