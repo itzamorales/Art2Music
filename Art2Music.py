@@ -280,9 +280,9 @@ with col5:
 with col6:
     #Ask user to select song duration
     st.markdown("Would you like to randomize note octaves while building song?")
-    _octavesRadio = st.radios("", ("Yes", "No"))
+    _octavesRadio = st.multiselect("", ("Yes", "No"))
     
-    use_octaves = st.radios
+    use_octaves = st.multiselect
     if _octavesRadio == "Yes":
         use_octave = True
     elif _octavesRadio == "No":
