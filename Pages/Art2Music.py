@@ -9,7 +9,6 @@
 #Import our libraries
 
 import streamlit as st
-st.title("Art2Music")
 import pandas as pd
 import numpy as np
 import cv2
@@ -27,8 +26,11 @@ import glob
 #Changed a check boxes to Radio option (tried to do both, but they had the same key, so I wasn't able to get them both). 
 #Changed a check box into a dropdown option instead.
 #added cover page to app
-
-
+st.set_page_config(
+  page_title="Final Project",
+  )
+st.title("Welcome to my final project")
+st.title("Art2Music")
 
 def get_piano_notes():   
     # White keys are in Uppercase and black keys (sharps) are in lowercase
